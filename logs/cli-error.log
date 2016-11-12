@@ -1,0 +1,34 @@
+2016-05-27 00:15:38 Error: [Cake\Console\Exception\MissingShellException] Shell class for "All" could not be found.
+Exception Attributes: array (
+  'class' => 'All',
+)
+Stack Trace:
+#0 /home/ubuntu/workspace/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(214): Cake\Console\ShellDispatcher->findShell('all')
+#1 /home/ubuntu/workspace/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 /home/ubuntu/workspace/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 /home/ubuntu/workspace/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2016-05-27 19:27:33 Error: [PDOException] SQLSTATE[HY000] [2002] Connection refused
+Stack Trace:
+#0 /home/ubuntu/workspace/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php(48): PDO->__construct('mysql:host=0.0....', 'helenarratedsex...', '', Array)
+#1 /home/ubuntu/workspace/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=0.0....', Array)
+#2 /home/ubuntu/workspace/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 /home/ubuntu/workspace/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /home/ubuntu/workspace/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /home/ubuntu/workspace/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /home/ubuntu/workspace/vendor/cakephp/cakephp/src/Database/Connection.php(317): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /home/ubuntu/workspace/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(920): Cake\Database\Connection->schemaCollection()
+#8 /home/ubuntu/workspace/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(875): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 /home/ubuntu/workspace/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(889): Bake\Shell\Task\ModelTask->listAll()
+#10 /home/ubuntu/workspace/vendor/cakephp/bake/src/Shell/BakeShell.php(228): Bake\Shell\Task\ModelTask->listUnskipped()
+#11 [internal function]: Bake\Shell\BakeShell->all()
+#12 /home/ubuntu/workspace/vendor/cakephp/cakephp/src/Console/Shell.php(444): call_user_func_array(Array, Array)
+#13 /home/ubuntu/workspace/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(217): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 /home/ubuntu/workspace/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 /home/ubuntu/workspace/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 /home/ubuntu/workspace/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
